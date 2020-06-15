@@ -25,6 +25,10 @@ class DataSearch extends SearchDelegate<String> {
 
   @override
   Widget buildResults(BuildContext context) {
+
+    if(query.isEmpty)
+    query ="unity";
+
     close(context, query);
     return Container();
   }

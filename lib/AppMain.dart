@@ -23,7 +23,6 @@ class _MyHomePageState extends State<MyHomePage> {
           actions: <Widget>[
             GetBuilder(
               init: ControllerApp(),
-              initState: (_) {},
               builder: (_) {
                 return ControllerApp.to.indexPage == 0
                     ? IconButton(
